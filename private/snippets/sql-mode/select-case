@@ -1,0 +1,19 @@
+# -*- mode: snippet -*-
+# name: select-case
+# key: select-case
+# contributor: Eric Parent <mailto:eric@eparent.info>
+# --
+SELECT
+  *$1
+
+CASE
+  WHEN 
+  ELSE 
+END AS $2 
+
+
+FROM $3
+
+WHERE
+$0
+;

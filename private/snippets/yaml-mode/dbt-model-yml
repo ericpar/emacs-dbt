@@ -1,0 +1,16 @@
+# -*- mode: snippet -*-
+# name: dbt-model-yml
+# key: dbt-model-yml
+# contributor: Eric Parent <mailto:eric@eparent.info>
+# --
+version: 2
+models:
+  - name: $1
+    description: $2
+
+    columns:
+      - name: $3
+        tests:
+          - not_null
+          - unique
+$0
