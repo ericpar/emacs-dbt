@@ -1,0 +1,11 @@
+# -*- mode: snippet -*-
+#name : dbt-cte
+#key : dbt-cte
+#expand-env: ((yas-indent-line 'auto'))
+#contributor : Mike Prentice
+# --
+WITH $1 as (
+SELECT
+  *
+FROM {{ ref('$1') }}
+),$0
